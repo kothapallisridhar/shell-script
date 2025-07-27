@@ -22,7 +22,7 @@ then
     then 
         echo "installing MySql is success!"
     else 
-        echo "installling MySql is failure!"
+        echo "installing MySql is failure!"
         exit 1
     fi
 else 
