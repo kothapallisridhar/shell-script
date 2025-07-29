@@ -22,13 +22,14 @@ VALIDATE(){
     fi
 }
 
-for package in ${PACKAGES[@]}
+//for package in ${PACKAGES[@]}
+for package in $@
 do 
     dnf list installed $package &>> $LOG_FILE
     if [ $? -ne 0 ]
     then 
         echo -e "$Y $package is not installed.. going to install it" | tee -a  $LOG_FILE
-        dnf install $package -Y &>>$LOG_FILE
+        dnf install $package -y &>>$LOG_FILE
         VALIDATE $? "$package"
     else     
         echo -e "Nothing to do $package... $Y already installed $W" | tee -a  $LOG_FILE
