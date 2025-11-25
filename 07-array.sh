@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MOVIES=("F1" "2 Fast 2 Furious" "Spider man" "Mufasa")
+MOVIES=("F1" "2 Fast 2 Furious" "Spider man" "Zatura")
 
 echo "First Movie: ${MOVIES[0]}"
 echo "First Movie: ${MOVIES[2]}"
