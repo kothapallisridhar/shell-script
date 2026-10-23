@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# shell by default treats variable as string
+
 NUMBER1=300
 NUMBER2=200
 
